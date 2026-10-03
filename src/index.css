@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink-950: #0a0a0f;
+  --color-ink-900: #111118;
+  --color-ink-800: #1a1a24;
+  --color-ink-700: #2a2a38;
+  --color-ink-600: #3a3a4c;
+  --color-ink-500: #5a5a72;
+  --color-ink-400: #8a8aa0;
+  --color-ink-300: #b0b0c4;
+  --color-ink-200: #d4d4e4;
+  --color-ink-100: #eaeaF4;
+  --color-ink-50: #f5f5fa;
+
+  --color-electric-400: #60a5fa;
+  --color-electric-500: #3b82f6;
+  --color-electric-600: #2563eb;
+
+  --color-paper: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-line: #e5e4e8;
+}
+
+/* Light mode base */
+html:not(.dark) body {
+  background-color: var(--color-paper);
+  color: var(--color-ink-900);
+}
+
+/* Dark mode base */
+html.dark body {
+  background-color: var(--color-ink-950);
+  color: var(--color-ink-100);
+}
+
+/* Tap highlight removal */
+html,
+button,
+a,
+input,
+label,
+summary {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+/* Focus ring */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid var(--color-electric-500);
+  outline-offset: 3px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section scroll margin for fixed header */
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-electric-500);
+  color: white;
+}

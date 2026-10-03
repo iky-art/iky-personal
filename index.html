@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0f" />
+
+    <!-- Primary SEO -->
+    <title>Iky Dev — Developer · Founder · Builder</title>
+    <meta name="description" content="Personal website of Iky (Iky Dev) — a developer, founder, and builder focused on web development, open-source projects, and digital products." />
+    <meta name="author" content="Iky" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://iky.dev/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Iky Dev" />
+    <meta property="og:title" content="Iky Dev — Developer · Founder · Builder" />
+    <meta property="og:description" content="Personal website of Iky (Iky Dev) — a developer, founder, and builder focused on web development, open-source projects, and digital products." />
+    <meta property="og:url" content="https://iky.dev/" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Iky Dev — Developer · Founder · Builder" />
+    <meta name="twitter:description" content="Personal website of Iky (Iky Dev) — a developer, founder, and builder focused on web development, open-source projects, and digital products." />
+    <meta name="twitter:url" content="https://iky.dev/" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Iky",
+      "alternateName": "Iky Dev",
+      "jobTitle": "Developer",
+      "url": "https://iky.dev/",
+      "sameAs": [
+        "https://github.com/iky-art"
+      ],
+      "knowsAbout": [
+        "Web Development",
+        "Open Source",
+        "Digital Products"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <script>
+      (function() {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
